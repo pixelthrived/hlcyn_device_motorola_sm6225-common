@@ -143,6 +143,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
+TARGET_TAP_TO_WAKE_NODE := "/sys/class/sensors/dt-gesture/enable"
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
