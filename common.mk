@@ -131,6 +131,8 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 USE_DEX2OAT_DEBUG := false
 
 # Display
+TARGET_DISPLAY_USE_SMOOTH_MOTION := true
+
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
