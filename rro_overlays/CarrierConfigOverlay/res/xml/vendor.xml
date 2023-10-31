@@ -1023,39 +1023,6 @@
             <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;WifiNetwork&gt;&lt;SSID&gt;Vodafone NL WiFi&lt;/SSID&gt;&lt;Credential&gt;&lt;SIM&gt;&lt;EAPType&gt;23&lt;/EAPType&gt;&lt;/SIM&gt;&lt;/Credential&gt;&lt;/WifiNetwork&gt;" />
         </string-array>
     </carrier_config>
-    <carrier_config mcc="204" mnc="04" spn="U.S.CELLULAR">
-        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
-        <boolean name="always_show_emergency_alert_onoff_bool" value="true" />
-        <boolean name="call_barring_visibility_bool" value="true" />
-        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="1" />
-        <boolean name="carrier_force_disable_etws_cmas_test_bool" value="true" />
-        <int-array name="carrier_nr_availabilities_int_array" num="2">
-            <item value="1" />
-            <item value="2" />
-        </int-array>
-        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_volte_tty_supported_bool" value="false" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <boolean name="check_pricing_with_carrier_data_roaming_bool" value="true" />
-        <string name="default_vm_number_string">+31654501233</string>
-        <boolean name="display_hd_plus_icon_bool" value="true" />
-        <boolean name="editable_voicemail_number_setting_bool" value="false" />
-        <boolean name="enabledMMS" value="false" />
-        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
-        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
-        <int name="maxImageHeight" value="1944" />
-        <int name="maxImageWidth" value="2592" />
-        <int name="maxMessageSize" value="1048576" />
-        <int name="recipientLimit" value="20" />
-        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
-        <int name="smsToMmsTextThreshold" value="-1" />
-        <int name="wifi.carrier_profiles_version_int" value="1" />
-        <string-array name="wifi.network_profiles_string_array" num="1">
-            <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;WifiNetwork&gt;&lt;SSID&gt;Vodafone NL WiFi&lt;/SSID&gt;&lt;Credential&gt;&lt;SIM&gt;&lt;EAPType&gt;23&lt;/EAPType&gt;&lt;/SIM&gt;&lt;/Credential&gt;&lt;/WifiNetwork&gt;" />
-        </string-array>
-    </carrier_config>
     <carrier_config mcc="204" mnc="04" spn="c spire">
         <boolean name="always_show_emergency_alert_onoff_bool" value="true" />
         <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
@@ -4037,7 +4004,7 @@
         <string name="sim_country_iso_override_string">es</string>
         <boolean name="smsUsesSimpleCharactersOnly" value="true" />
     </carrier_config>
-    <carrier_config mcc="214" mnc="04" imsi="2140426XXXXXXXX">
+    <carrier_config mcc="214" mnc="04" imsi="2140426">
         <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
@@ -5435,6 +5402,7 @@
         <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
         <boolean name="smsUsesSimpleCharactersOnly" value="true" />
     </carrier_config>
+    <carrier_config mcc="214" mnc="38" />
     <carrier_config mcc="216" mnc="01">
         <int name="maxImageHeight" value="1944" />
         <int name="maxImageWidth" value="2592" />
@@ -12189,6 +12157,9 @@
         <string-array name="carrier_certificate_string_array" num="1">
             <item value="b67affcda89e3193b1595036d7c6cdbe22be5ca24c9f6cf93fc6b48f91d7310d:com.orange.myorange.omd,com.orange.phone,com.orange.update" />
         </string-array>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <string name="config_plans_package_override_string">com.orange.myorange.omd</string>
         <int name="maxImageHeight" value="1944" />
         <int name="maxImageWidth" value="2592" />
@@ -12196,7 +12167,17 @@
         <boolean name="smsEncodingChangeable" value="false" />
         <int name="smsToMmsTextThreshold" value="6" />
     </carrier_config>
-    <carrier_config mcc="259" mnc="02" />
+    <carrier_config mcc="259" mnc="02">
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
     <carrier_config mcc="259" mnc="05">
         <int name="maxImageHeight" value="1944" />
         <int name="maxImageWidth" value="2592" />
@@ -17440,7 +17421,7 @@
         <boolean name="hide_ims_apn_bool" value="true" />
         <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
     </carrier_config>
-    <carrier_config mcc="302" mnc="220" spn="WOM ROAMING INT">
+    <carrier_config mcc="302" mnc="220" spn="WOM">
         <boolean name="display_in_call_notification_wifi_icon_bool" value="true" />
         <boolean name="hide_ims_apn_bool" value="true" />
         <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
@@ -39706,6 +39687,125 @@
             <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;PasspointProfile autojoin=&quot;true&quot;&gt;&lt;PPSMO&gt;&lt;![CDATA[&lt;MgmtTree xmlns=&quot;syncml:dmddf1.2&quot;&gt;&lt;VerDTD&gt;1.2&lt;/VerDTD&gt;&lt;Node&gt;&lt;NodeName&gt;PerProviderSubscription&lt;/NodeName&gt;&lt;RTProperties&gt;&lt;Type&gt;&lt;DDFName&gt;urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0&lt;/DDFName&gt;&lt;/Type&gt;&lt;/RTProperties&gt;&lt;Node&gt;&lt;NodeName&gt;i001&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;HomeSP&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;FriendlyName&lt;/NodeName&gt;&lt;Value&gt;T-Mobile passpoint&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;FQDN&lt;/NodeName&gt;&lt;Value&gt;t-mobile1.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;RoamingConsortiumOI&lt;/NodeName&gt;&lt;Value&gt;112233,445566&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;Credential&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;Realm&lt;/NodeName&gt;&lt;Value&gt;wlan.mnc310.mcc310.3gppnetwork.org&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;SIM&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;IMSI&lt;/NodeName&gt;&lt;Value&gt;310310*&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;EAPType&lt;/NodeName&gt;&lt;Value&gt;23&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/MgmtTree&gt;]]&gt;&lt;/PPSMO&gt;&lt;/PasspointProfile&gt;" />
         </string-array>
     </carrier_config>
+    <carrier_config mcc="310" mnc="240" gid1="6912">
+        <string name="5g_icon_configuration_string">connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G</string>
+        <string name="5g_icon_display_grace_period_string">connected_mmwave,not_restricted_rrc_idle,30;connected_mmwave,not_restricted_rrc_con,30;connected_mmwave,legacy,30;connected,legacy,30;not_restricted_rrc_idle,legacy,30;not_restricted_rrc_con,legacy,30</string>
+        <int-array name="additional_nr_advanced_bands_int_array" num="1">
+            <item value="41" />
+        </int-array>
+        <int-array name="additional_nr_nsa_advanced_bands_int_array" num="1">
+            <item value="41" />
+        </int-array>
+        <boolean name="allowEnablingWapPushSI" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="true" />
+        <string name="call_composer_picture_server_url_string">https://ue.fcs.mstore.msg.t-mobile.com/restclient/V1/FCS/Upload</string>
+        <string-array name="carrier_certificate_string_array" num="4">
+            <item value="92B5F8117FBD9BD5738FF168A4FA12CBE284BE834EDE1A7BB44DD8455BA15920" />
+            <item value="3D1A4BEF6EE7AF7D34D120E7B1AAC0DD245585DE6237CF100F68333AFACFF562" />
+            <item value="6892793FC413019D2DF609DFED7AF622D0F2D8FCF96EFA7E3FB87EEA34E10B93" />
+            <item value="7B68FD9D4E7610C9CB35FC0C6CC06EA04C6906E3DFA9F48F9A05460AF36BFFFC" />
+        </string-array>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <boolean name="carrier_ims_gba_required_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="4">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+            <item value="mms" />
+        </string-array>
+        <boolean name="carrier_name_override_bool" value="true" />
+        <string name="carrier_name_string">T-Mobile</string>
+        <int-array name="carrier_nr_availabilities_int_array" num="2">
+            <item value="1" />
+            <item value="2" />
+        </int-array>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <string name="carrier_vvm_package_name_string">com.tmobile.vvm.application</string>
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_wfc_supports_wifi_only_bool" value="false" />
+        <boolean name="config_enable_oem_5g_api" value="true" />
+        <boolean name="config_retry_sms_over_ims" value="true" />
+        <boolean name="display_in_call_notification_wifi_icon_bool" value="true" />
+        <boolean name="drop_hold_call_for_emc_sim" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <int name="emc_connection_limit_int_sim" value="50000" />
+        <boolean name="enableMMSDeliveryReports" value="true" />
+        <boolean name="enableMMSReadReports" value="true" />
+        <boolean name="enableWapPushSI" value="true" />
+        <boolean name="enable_nsa_uc_bands_bool" value="true" />
+        <boolean name="enable_omacp_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="gba_ua_security_organization_int" value="1" />
+        <int name="gba_ua_security_protocol_int" value="65536" />
+        <int name="gba_ua_tls_cipher_suite_int" value="47" />
+        <string name="gps.es_extension_sec">0</string>
+        <string name="gps.lpp_profile">255</string>
+        <string name="gps.supl_host">supl.geo.t-mobile.com</string>
+        <string name="gps.supl_mode">1</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+        <boolean name="hide_tty_hco_vco_with_rtt" value="true" />
+        <boolean name="ignore_rtt_mode_setting_bool" value="true" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxMessageSize" value="1048576" />
+        <long name="message_expiration_time_long" value="86400000" />
+        <string-array name="mmi_two_digit_number_pattern_string_array" num="4">
+            <item value="*2" />
+            <item value="*3" />
+            <item value="*4" />
+            <item value="*5" />
+        </string-array>
+        <boolean name="mmsCloseConnection" value="true" />
+        <boolean name="mmsRoamingAutoRetrieveByDefault" value="true" />
+        <boolean name="mtk_emc_rtt_guard_timer_bool" value="true" />
+        <boolean name="mtk_key_vt_downgrade_in_bad_bitrate" value="true" />
+        <int name="recipientLimit" value="20" />
+        <boolean name="rtt_auto_upgrade_bool" value="false" />
+        <boolean name="rtt_downgrade_supported_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="rtt_supported_for_vt_bool" value="false" />
+        <boolean name="rtt_upgrade_supported_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <boolean name="show_iccid_in_sim_status_bool" value="true" />
+        <int name="smsToMmsTextThreshold" value="12" />
+        <boolean name="support_video_conference_call_bool" value="true" />
+        <boolean name="use_only_rsrp_for_lte_signal_bar_bool" value="true" />
+        <int name="volte_replacement_rat_int" value="3" />
+        <string name="vvm_destination_number_string">122</string>
+        <int name="vvm_port_number_int" value="1808" />
+        <string name="vvm_type_string">vvm_type_cvvm</string>
+        <boolean name="wfc_carrier_name_override_by_pnn_bool" value="true" />
+        <string-array name="wfc_operator_error_codes_string_array" num="1">
+            <item value="REG09|0" />
+        </string-array>
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <int name="wifi.carrier_profiles_version_int" value="1" />
+        <string-array name="wifi.network_profiles_string_array" num="1">
+            <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;WifiNetwork&gt;&lt;SSID&gt;TMobileWingman&lt;/SSID&gt;&lt;Credential&gt;&lt;SIM&gt;&lt;EAPType&gt;23&lt;/EAPType&gt;&lt;/SIM&gt;&lt;/Credential&gt;&lt;/WifiNetwork&gt;" />
+        </string-array>
+        <string-array name="wifi.passpoint_profiles_string_array" num="2">
+            <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;PasspointProfile autojoin=&quot;true&quot;&gt;&lt;PPSMO&gt;&lt;![CDATA[&lt;MgmtTree xmlns=&quot;syncml:dmddf1.2&quot;&gt;&lt;VerDTD&gt;1.2&lt;/VerDTD&gt;&lt;Node&gt;&lt;NodeName&gt;PerProviderSubscription&lt;/NodeName&gt;&lt;RTProperties&gt;&lt;Type&gt;&lt;DDFName&gt;urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0&lt;/DDFName&gt;&lt;/Type&gt;&lt;/RTProperties&gt;&lt;Node&gt;&lt;NodeName&gt;i001&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;HomeSP&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;FriendlyName&lt;/NodeName&gt;&lt;Value&gt;T-Mobile passpoint&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;FQDN&lt;/NodeName&gt;&lt;Value&gt;t-mobile.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;RoamingConsortiumOI&lt;/NodeName&gt;&lt;Value&gt;112233,445566&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;Credential&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;Realm&lt;/NodeName&gt;&lt;Value&gt;wlan.mnc260.mcc310.3gppnetwork.org&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;SIM&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;IMSI&lt;/NodeName&gt;&lt;Value&gt;310260*&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;EAPType&lt;/NodeName&gt;&lt;Value&gt;23&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/MgmtTree&gt;]]&gt;&lt;/PPSMO&gt;&lt;/PasspointProfile&gt;" />
+            <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;PasspointProfile autojoin=&quot;true&quot;&gt;&lt;PPSMO&gt;&lt;![CDATA[&lt;MgmtTree xmlns=&quot;syncml:dmddf1.2&quot;&gt;&lt;VerDTD&gt;1.2&lt;/VerDTD&gt;&lt;Node&gt;&lt;NodeName&gt;PerProviderSubscription&lt;/NodeName&gt;&lt;RTProperties&gt;&lt;Type&gt;&lt;DDFName&gt;urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0&lt;/DDFName&gt;&lt;/Type&gt;&lt;/RTProperties&gt;&lt;Node&gt;&lt;NodeName&gt;i001&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;HomeSP&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;FriendlyName&lt;/NodeName&gt;&lt;Value&gt;T-Mobile passpoint&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;FQDN&lt;/NodeName&gt;&lt;Value&gt;t-mobile1.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;RoamingConsortiumOI&lt;/NodeName&gt;&lt;Value&gt;112233,445566&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;Credential&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;Realm&lt;/NodeName&gt;&lt;Value&gt;wlan.mnc310.mcc310.3gppnetwork.org&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;SIM&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;IMSI&lt;/NodeName&gt;&lt;Value&gt;310310*&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;EAPType&lt;/NodeName&gt;&lt;Value&gt;23&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/MgmtTree&gt;]]&gt;&lt;/PPSMO&gt;&lt;/PasspointProfile&gt;" />
+        </string-array>
+    </carrier_config>
     <carrier_config mcc="310" mnc="240" gid1="6941">
         <string name="5g_icon_configuration_string">connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G</string>
         <string name="5g_icon_display_grace_period_string">connected_mmwave,not_restricted_rrc_idle,30;connected_mmwave,not_restricted_rrc_con,30;connected_mmwave,legacy,30;connected,legacy,30;not_restricted_rrc_idle,legacy,30;not_restricted_rrc_con,legacy,30</string>
@@ -45156,6 +45256,125 @@
         </string-array>
     </carrier_config>
     <carrier_config mcc="310" mnc="260" gid1="6911">
+        <string name="5g_icon_configuration_string">connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G</string>
+        <string name="5g_icon_display_grace_period_string">connected_mmwave,not_restricted_rrc_idle,30;connected_mmwave,not_restricted_rrc_con,30;connected_mmwave,legacy,30;connected,legacy,30;not_restricted_rrc_idle,legacy,30;not_restricted_rrc_con,legacy,30</string>
+        <int-array name="additional_nr_advanced_bands_int_array" num="1">
+            <item value="41" />
+        </int-array>
+        <int-array name="additional_nr_nsa_advanced_bands_int_array" num="1">
+            <item value="41" />
+        </int-array>
+        <boolean name="allowEnablingWapPushSI" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="true" />
+        <string name="call_composer_picture_server_url_string">https://ue.fcs.mstore.msg.t-mobile.com/restclient/V1/FCS/Upload</string>
+        <string-array name="carrier_certificate_string_array" num="4">
+            <item value="92B5F8117FBD9BD5738FF168A4FA12CBE284BE834EDE1A7BB44DD8455BA15920" />
+            <item value="3D1A4BEF6EE7AF7D34D120E7B1AAC0DD245585DE6237CF100F68333AFACFF562" />
+            <item value="6892793FC413019D2DF609DFED7AF622D0F2D8FCF96EFA7E3FB87EEA34E10B93" />
+            <item value="7B68FD9D4E7610C9CB35FC0C6CC06EA04C6906E3DFA9F48F9A05460AF36BFFFC" />
+        </string-array>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <boolean name="carrier_ims_gba_required_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="4">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+            <item value="mms" />
+        </string-array>
+        <boolean name="carrier_name_override_bool" value="true" />
+        <string name="carrier_name_string">T-Mobile</string>
+        <int-array name="carrier_nr_availabilities_int_array" num="2">
+            <item value="1" />
+            <item value="2" />
+        </int-array>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <string name="carrier_vvm_package_name_string">com.tmobile.vvm.application</string>
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_wfc_supports_wifi_only_bool" value="false" />
+        <boolean name="config_enable_oem_5g_api" value="true" />
+        <boolean name="config_retry_sms_over_ims" value="true" />
+        <boolean name="display_in_call_notification_wifi_icon_bool" value="true" />
+        <boolean name="drop_hold_call_for_emc_sim" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <int name="emc_connection_limit_int_sim" value="50000" />
+        <boolean name="enableMMSDeliveryReports" value="true" />
+        <boolean name="enableMMSReadReports" value="true" />
+        <boolean name="enableWapPushSI" value="true" />
+        <boolean name="enable_nsa_uc_bands_bool" value="true" />
+        <boolean name="enable_omacp_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="gba_ua_security_organization_int" value="1" />
+        <int name="gba_ua_security_protocol_int" value="65536" />
+        <int name="gba_ua_tls_cipher_suite_int" value="47" />
+        <string name="gps.es_extension_sec">0</string>
+        <string name="gps.lpp_profile">255</string>
+        <string name="gps.supl_host">supl.geo.t-mobile.com</string>
+        <string name="gps.supl_mode">1</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+        <boolean name="hide_tty_hco_vco_with_rtt" value="true" />
+        <boolean name="ignore_rtt_mode_setting_bool" value="true" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxMessageSize" value="1048576" />
+        <long name="message_expiration_time_long" value="86400000" />
+        <string-array name="mmi_two_digit_number_pattern_string_array" num="4">
+            <item value="*2" />
+            <item value="*3" />
+            <item value="*4" />
+            <item value="*5" />
+        </string-array>
+        <boolean name="mmsCloseConnection" value="true" />
+        <boolean name="mmsRoamingAutoRetrieveByDefault" value="true" />
+        <boolean name="mtk_emc_rtt_guard_timer_bool" value="true" />
+        <boolean name="mtk_key_vt_downgrade_in_bad_bitrate" value="true" />
+        <int name="recipientLimit" value="20" />
+        <boolean name="rtt_auto_upgrade_bool" value="false" />
+        <boolean name="rtt_downgrade_supported_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="rtt_supported_for_vt_bool" value="false" />
+        <boolean name="rtt_upgrade_supported_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <boolean name="show_iccid_in_sim_status_bool" value="true" />
+        <int name="smsToMmsTextThreshold" value="12" />
+        <boolean name="support_video_conference_call_bool" value="true" />
+        <boolean name="use_only_rsrp_for_lte_signal_bar_bool" value="true" />
+        <int name="volte_replacement_rat_int" value="3" />
+        <string name="vvm_destination_number_string">122</string>
+        <int name="vvm_port_number_int" value="1808" />
+        <string name="vvm_type_string">vvm_type_cvvm</string>
+        <boolean name="wfc_carrier_name_override_by_pnn_bool" value="true" />
+        <string-array name="wfc_operator_error_codes_string_array" num="1">
+            <item value="REG09|0" />
+        </string-array>
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <int name="wifi.carrier_profiles_version_int" value="1" />
+        <string-array name="wifi.network_profiles_string_array" num="1">
+            <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;WifiNetwork&gt;&lt;SSID&gt;TMobileWingman&lt;/SSID&gt;&lt;Credential&gt;&lt;SIM&gt;&lt;EAPType&gt;23&lt;/EAPType&gt;&lt;/SIM&gt;&lt;/Credential&gt;&lt;/WifiNetwork&gt;" />
+        </string-array>
+        <string-array name="wifi.passpoint_profiles_string_array" num="2">
+            <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;PasspointProfile autojoin=&quot;true&quot;&gt;&lt;PPSMO&gt;&lt;![CDATA[&lt;MgmtTree xmlns=&quot;syncml:dmddf1.2&quot;&gt;&lt;VerDTD&gt;1.2&lt;/VerDTD&gt;&lt;Node&gt;&lt;NodeName&gt;PerProviderSubscription&lt;/NodeName&gt;&lt;RTProperties&gt;&lt;Type&gt;&lt;DDFName&gt;urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0&lt;/DDFName&gt;&lt;/Type&gt;&lt;/RTProperties&gt;&lt;Node&gt;&lt;NodeName&gt;i001&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;HomeSP&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;FriendlyName&lt;/NodeName&gt;&lt;Value&gt;T-Mobile passpoint&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;FQDN&lt;/NodeName&gt;&lt;Value&gt;t-mobile.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;RoamingConsortiumOI&lt;/NodeName&gt;&lt;Value&gt;112233,445566&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;Credential&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;Realm&lt;/NodeName&gt;&lt;Value&gt;wlan.mnc260.mcc310.3gppnetwork.org&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;SIM&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;IMSI&lt;/NodeName&gt;&lt;Value&gt;310260*&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;EAPType&lt;/NodeName&gt;&lt;Value&gt;23&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/MgmtTree&gt;]]&gt;&lt;/PPSMO&gt;&lt;/PasspointProfile&gt;" />
+            <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;PasspointProfile autojoin=&quot;true&quot;&gt;&lt;PPSMO&gt;&lt;![CDATA[&lt;MgmtTree xmlns=&quot;syncml:dmddf1.2&quot;&gt;&lt;VerDTD&gt;1.2&lt;/VerDTD&gt;&lt;Node&gt;&lt;NodeName&gt;PerProviderSubscription&lt;/NodeName&gt;&lt;RTProperties&gt;&lt;Type&gt;&lt;DDFName&gt;urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0&lt;/DDFName&gt;&lt;/Type&gt;&lt;/RTProperties&gt;&lt;Node&gt;&lt;NodeName&gt;i001&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;HomeSP&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;FriendlyName&lt;/NodeName&gt;&lt;Value&gt;T-Mobile passpoint&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;FQDN&lt;/NodeName&gt;&lt;Value&gt;t-mobile1.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;RoamingConsortiumOI&lt;/NodeName&gt;&lt;Value&gt;112233,445566&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;Credential&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;Realm&lt;/NodeName&gt;&lt;Value&gt;wlan.mnc310.mcc310.3gppnetwork.org&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;SIM&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;IMSI&lt;/NodeName&gt;&lt;Value&gt;310310*&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;EAPType&lt;/NodeName&gt;&lt;Value&gt;23&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/MgmtTree&gt;]]&gt;&lt;/PPSMO&gt;&lt;/PasspointProfile&gt;" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="310" mnc="260" gid1="6912">
         <string name="5g_icon_configuration_string">connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G</string>
         <string name="5g_icon_display_grace_period_string">connected_mmwave,not_restricted_rrc_idle,30;connected_mmwave,not_restricted_rrc_con,30;connected_mmwave,legacy,30;connected,legacy,30;not_restricted_rrc_idle,legacy,30;not_restricted_rrc_con,legacy,30</string>
         <int-array name="additional_nr_advanced_bands_int_array" num="1">
@@ -101649,6 +101868,71 @@
             <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;PasspointProfile autojoin=&quot;true&quot;&gt;&lt;PPSMO&gt;&lt;![CDATA[&lt;MgmtTree xmlns=&quot;syncml:dmddf1.2&quot;&gt;&lt;VerDTD&gt;1.2&lt;/VerDTD&gt;&lt;Node&gt;&lt;NodeName&gt;PerProviderSubscription&lt;/NodeName&gt;&lt;RTProperties&gt;&lt;Type&gt;&lt;DDFName&gt;urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0&lt;/DDFName&gt;&lt;/Type&gt;&lt;/RTProperties&gt;&lt;Node&gt;&lt;NodeName&gt;i001&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;HomeSP&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;FriendlyName&lt;/NodeName&gt;&lt;Value&gt;AT&amp;amp;T MX WiFi&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;FQDN&lt;/NodeName&gt;&lt;Value&gt;attmexwifi.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;RoamingConsortiumOI&lt;/NodeName&gt;&lt;Value&gt;112233,445566&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;Credential&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;Realm&lt;/NodeName&gt;&lt;Value&gt;wlan.mnc050.mcc334.3gppnetwork.org,attmexwifi.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;SIM&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;IMSI&lt;/NodeName&gt;&lt;Value&gt;334050*&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;EAPType&lt;/NodeName&gt;&lt;Value&gt;23&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/MgmtTree&gt;]]&gt;&lt;/PPSMO&gt;&lt;/PasspointProfile&gt;" />
         </string-array>
     </carrier_config>
+    <carrier_config mcc="334" mnc="05" gid1="424C5545FFFFFFFFFF">
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <string-array name="non_roaming_operator_string_array" num="3">
+            <item value="33403" />
+            <item value="334030" />
+            <item value="334090" />
+        </string-array>
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="334" mnc="05" gid1="4D454741FFFFFFFFFF">
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <string-array name="non_roaming_operator_string_array" num="3">
+            <item value="33403" />
+            <item value="334030" />
+            <item value="334090" />
+        </string-array>
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="334" mnc="05" gid1="4E45575757FFFFFFFF">
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <string-array name="non_roaming_operator_string_array" num="3">
+            <item value="33403" />
+            <item value="334030" />
+            <item value="334090" />
+        </string-array>
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="334" mnc="05" gid1="55424958FFFFFFFFFF">
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <string-array name="non_roaming_operator_string_array" num="3">
+            <item value="33403" />
+            <item value="334030" />
+            <item value="334090" />
+        </string-array>
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="334" mnc="05" gid1="594FFFFFFFFFFFFFFF">
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <string-array name="non_roaming_operator_string_array" num="3">
+            <item value="33403" />
+            <item value="334030" />
+            <item value="334090" />
+        </string-array>
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
     <carrier_config mcc="334" mnc="05">
         <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
         <int name="maxImageHeight" value="1944" />
@@ -101661,6 +101945,226 @@
         </string-array>
         <int name="recipientLimit" value="20" />
         <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="334" mnc="050" gid1="424C5545FFFFFFFFFF">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <string name="carrier_name_string">AT&amp;T</string>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="enable_update_address_for_mo" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string name="gps.es_extension_sec">0</string>
+        <string name="gps.lpp_profile">3</string>
+        <string name="gps.supl_host">supl.attmex.mx</string>
+        <string name="gps.supl_mode">1</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <int name="lte_plus_threshold_bandwidth_khz_int" value="0" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxMessageSize" value="599000" />
+        <int name="maxSubjectLength" value="80" />
+        <string-array name="mmi_two_digit_number_pattern_string_array" num="1">
+            <item value="#9" />
+        </string-array>
+        <string-array name="non_roaming_operator_string_array" num="4">
+            <item value="33403" />
+            <item value="334030" />
+            <item value="334090" />
+            <item value="334020" />
+        </string-array>
+        <int name="recipientLimit" value="20" />
+        <boolean name="skip_cf_fail_to_disable_dialog_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="5" />
+        <boolean name="voicemail_notification_persistent_bool" value="true" />
+        <int name="wifi.carrier_profiles_version_int" value="1" />
+        <string-array name="wifi.passpoint_profiles_string_array" num="1">
+            <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;PasspointProfile autojoin=&quot;true&quot;&gt;&lt;PPSMO&gt;&lt;![CDATA[&lt;MgmtTree xmlns=&quot;syncml:dmddf1.2&quot;&gt;&lt;VerDTD&gt;1.2&lt;/VerDTD&gt;&lt;Node&gt;&lt;NodeName&gt;PerProviderSubscription&lt;/NodeName&gt;&lt;RTProperties&gt;&lt;Type&gt;&lt;DDFName&gt;urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0&lt;/DDFName&gt;&lt;/Type&gt;&lt;/RTProperties&gt;&lt;Node&gt;&lt;NodeName&gt;i001&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;HomeSP&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;FriendlyName&lt;/NodeName&gt;&lt;Value&gt;AT&amp;amp;T MX WiFi&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;FQDN&lt;/NodeName&gt;&lt;Value&gt;attmexwifi.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;RoamingConsortiumOI&lt;/NodeName&gt;&lt;Value&gt;112233,445566&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;Credential&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;Realm&lt;/NodeName&gt;&lt;Value&gt;wlan.mnc050.mcc334.3gppnetwork.org,attmexwifi.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;SIM&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;IMSI&lt;/NodeName&gt;&lt;Value&gt;334050*&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;EAPType&lt;/NodeName&gt;&lt;Value&gt;23&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/MgmtTree&gt;]]&gt;&lt;/PPSMO&gt;&lt;/PasspointProfile&gt;" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="334" mnc="050" gid1="4D454741FFFFFFFFFF">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <string name="carrier_name_string">AT&amp;T</string>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="enable_update_address_for_mo" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string name="gps.es_extension_sec">0</string>
+        <string name="gps.lpp_profile">3</string>
+        <string name="gps.supl_host">supl.attmex.mx</string>
+        <string name="gps.supl_mode">1</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <int name="lte_plus_threshold_bandwidth_khz_int" value="0" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxMessageSize" value="599000" />
+        <int name="maxSubjectLength" value="80" />
+        <string-array name="mmi_two_digit_number_pattern_string_array" num="1">
+            <item value="#9" />
+        </string-array>
+        <string-array name="non_roaming_operator_string_array" num="4">
+            <item value="33403" />
+            <item value="334030" />
+            <item value="334090" />
+            <item value="334020" />
+        </string-array>
+        <int name="recipientLimit" value="20" />
+        <boolean name="skip_cf_fail_to_disable_dialog_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="5" />
+        <boolean name="voicemail_notification_persistent_bool" value="true" />
+        <int name="wifi.carrier_profiles_version_int" value="1" />
+        <string-array name="wifi.passpoint_profiles_string_array" num="1">
+            <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;PasspointProfile autojoin=&quot;true&quot;&gt;&lt;PPSMO&gt;&lt;![CDATA[&lt;MgmtTree xmlns=&quot;syncml:dmddf1.2&quot;&gt;&lt;VerDTD&gt;1.2&lt;/VerDTD&gt;&lt;Node&gt;&lt;NodeName&gt;PerProviderSubscription&lt;/NodeName&gt;&lt;RTProperties&gt;&lt;Type&gt;&lt;DDFName&gt;urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0&lt;/DDFName&gt;&lt;/Type&gt;&lt;/RTProperties&gt;&lt;Node&gt;&lt;NodeName&gt;i001&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;HomeSP&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;FriendlyName&lt;/NodeName&gt;&lt;Value&gt;AT&amp;amp;T MX WiFi&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;FQDN&lt;/NodeName&gt;&lt;Value&gt;attmexwifi.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;RoamingConsortiumOI&lt;/NodeName&gt;&lt;Value&gt;112233,445566&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;Credential&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;Realm&lt;/NodeName&gt;&lt;Value&gt;wlan.mnc050.mcc334.3gppnetwork.org,attmexwifi.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;SIM&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;IMSI&lt;/NodeName&gt;&lt;Value&gt;334050*&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;EAPType&lt;/NodeName&gt;&lt;Value&gt;23&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/MgmtTree&gt;]]&gt;&lt;/PPSMO&gt;&lt;/PasspointProfile&gt;" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="334" mnc="050" gid1="4E45575757FFFFFFFF">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <string name="carrier_name_string">AT&amp;T</string>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="enable_update_address_for_mo" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string name="gps.es_extension_sec">0</string>
+        <string name="gps.lpp_profile">3</string>
+        <string name="gps.supl_host">supl.attmex.mx</string>
+        <string name="gps.supl_mode">1</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <int name="lte_plus_threshold_bandwidth_khz_int" value="0" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxMessageSize" value="599000" />
+        <int name="maxSubjectLength" value="80" />
+        <string-array name="mmi_two_digit_number_pattern_string_array" num="1">
+            <item value="#9" />
+        </string-array>
+        <string-array name="non_roaming_operator_string_array" num="4">
+            <item value="33403" />
+            <item value="334030" />
+            <item value="334090" />
+            <item value="334020" />
+        </string-array>
+        <int name="recipientLimit" value="20" />
+        <boolean name="skip_cf_fail_to_disable_dialog_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="5" />
+        <boolean name="voicemail_notification_persistent_bool" value="true" />
+        <int name="wifi.carrier_profiles_version_int" value="1" />
+        <string-array name="wifi.passpoint_profiles_string_array" num="1">
+            <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;PasspointProfile autojoin=&quot;true&quot;&gt;&lt;PPSMO&gt;&lt;![CDATA[&lt;MgmtTree xmlns=&quot;syncml:dmddf1.2&quot;&gt;&lt;VerDTD&gt;1.2&lt;/VerDTD&gt;&lt;Node&gt;&lt;NodeName&gt;PerProviderSubscription&lt;/NodeName&gt;&lt;RTProperties&gt;&lt;Type&gt;&lt;DDFName&gt;urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0&lt;/DDFName&gt;&lt;/Type&gt;&lt;/RTProperties&gt;&lt;Node&gt;&lt;NodeName&gt;i001&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;HomeSP&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;FriendlyName&lt;/NodeName&gt;&lt;Value&gt;AT&amp;amp;T MX WiFi&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;FQDN&lt;/NodeName&gt;&lt;Value&gt;attmexwifi.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;RoamingConsortiumOI&lt;/NodeName&gt;&lt;Value&gt;112233,445566&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;Credential&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;Realm&lt;/NodeName&gt;&lt;Value&gt;wlan.mnc050.mcc334.3gppnetwork.org,attmexwifi.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;SIM&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;IMSI&lt;/NodeName&gt;&lt;Value&gt;334050*&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;EAPType&lt;/NodeName&gt;&lt;Value&gt;23&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/MgmtTree&gt;]]&gt;&lt;/PPSMO&gt;&lt;/PasspointProfile&gt;" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="334" mnc="050" gid1="55424958FFFFFFFFFF">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <string name="carrier_name_string">AT&amp;T</string>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="enable_update_address_for_mo" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string name="gps.es_extension_sec">0</string>
+        <string name="gps.lpp_profile">3</string>
+        <string name="gps.supl_host">supl.attmex.mx</string>
+        <string name="gps.supl_mode">1</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <int name="lte_plus_threshold_bandwidth_khz_int" value="0" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxMessageSize" value="599000" />
+        <int name="maxSubjectLength" value="80" />
+        <string-array name="mmi_two_digit_number_pattern_string_array" num="1">
+            <item value="#9" />
+        </string-array>
+        <string-array name="non_roaming_operator_string_array" num="4">
+            <item value="33403" />
+            <item value="334030" />
+            <item value="334090" />
+            <item value="334020" />
+        </string-array>
+        <int name="recipientLimit" value="20" />
+        <boolean name="skip_cf_fail_to_disable_dialog_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="5" />
+        <boolean name="voicemail_notification_persistent_bool" value="true" />
+        <int name="wifi.carrier_profiles_version_int" value="1" />
+        <string-array name="wifi.passpoint_profiles_string_array" num="1">
+            <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;PasspointProfile autojoin=&quot;true&quot;&gt;&lt;PPSMO&gt;&lt;![CDATA[&lt;MgmtTree xmlns=&quot;syncml:dmddf1.2&quot;&gt;&lt;VerDTD&gt;1.2&lt;/VerDTD&gt;&lt;Node&gt;&lt;NodeName&gt;PerProviderSubscription&lt;/NodeName&gt;&lt;RTProperties&gt;&lt;Type&gt;&lt;DDFName&gt;urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0&lt;/DDFName&gt;&lt;/Type&gt;&lt;/RTProperties&gt;&lt;Node&gt;&lt;NodeName&gt;i001&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;HomeSP&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;FriendlyName&lt;/NodeName&gt;&lt;Value&gt;AT&amp;amp;T MX WiFi&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;FQDN&lt;/NodeName&gt;&lt;Value&gt;attmexwifi.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;RoamingConsortiumOI&lt;/NodeName&gt;&lt;Value&gt;112233,445566&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;Credential&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;Realm&lt;/NodeName&gt;&lt;Value&gt;wlan.mnc050.mcc334.3gppnetwork.org,attmexwifi.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;SIM&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;IMSI&lt;/NodeName&gt;&lt;Value&gt;334050*&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;EAPType&lt;/NodeName&gt;&lt;Value&gt;23&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/MgmtTree&gt;]]&gt;&lt;/PPSMO&gt;&lt;/PasspointProfile&gt;" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="334" mnc="050" gid1="594FFFFFFFFFFFFFFF">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <string name="carrier_name_string">AT&amp;T</string>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="enable_update_address_for_mo" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string name="gps.es_extension_sec">0</string>
+        <string name="gps.lpp_profile">3</string>
+        <string name="gps.supl_host">supl.attmex.mx</string>
+        <string name="gps.supl_mode">1</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <int name="lte_plus_threshold_bandwidth_khz_int" value="0" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxMessageSize" value="599000" />
+        <int name="maxSubjectLength" value="80" />
+        <string-array name="mmi_two_digit_number_pattern_string_array" num="1">
+            <item value="#9" />
+        </string-array>
+        <string-array name="non_roaming_operator_string_array" num="4">
+            <item value="33403" />
+            <item value="334030" />
+            <item value="334090" />
+            <item value="334020" />
+        </string-array>
+        <int name="recipientLimit" value="20" />
+        <boolean name="skip_cf_fail_to_disable_dialog_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="5" />
+        <boolean name="voicemail_notification_persistent_bool" value="true" />
+        <int name="wifi.carrier_profiles_version_int" value="1" />
+        <string-array name="wifi.passpoint_profiles_string_array" num="1">
+            <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;PasspointProfile autojoin=&quot;true&quot;&gt;&lt;PPSMO&gt;&lt;![CDATA[&lt;MgmtTree xmlns=&quot;syncml:dmddf1.2&quot;&gt;&lt;VerDTD&gt;1.2&lt;/VerDTD&gt;&lt;Node&gt;&lt;NodeName&gt;PerProviderSubscription&lt;/NodeName&gt;&lt;RTProperties&gt;&lt;Type&gt;&lt;DDFName&gt;urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0&lt;/DDFName&gt;&lt;/Type&gt;&lt;/RTProperties&gt;&lt;Node&gt;&lt;NodeName&gt;i001&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;HomeSP&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;FriendlyName&lt;/NodeName&gt;&lt;Value&gt;AT&amp;amp;T MX WiFi&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;FQDN&lt;/NodeName&gt;&lt;Value&gt;attmexwifi.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;RoamingConsortiumOI&lt;/NodeName&gt;&lt;Value&gt;112233,445566&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;Credential&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;Realm&lt;/NodeName&gt;&lt;Value&gt;wlan.mnc050.mcc334.3gppnetwork.org,attmexwifi.com&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;SIM&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;IMSI&lt;/NodeName&gt;&lt;Value&gt;334050*&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;EAPType&lt;/NodeName&gt;&lt;Value&gt;23&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/MgmtTree&gt;]]&gt;&lt;/PPSMO&gt;&lt;/PasspointProfile&gt;" />
+        </string-array>
     </carrier_config>
     <carrier_config mcc="334" mnc="050">
         <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
@@ -108060,6 +108564,7 @@
     <carrier_config mcc="421" mnc="02" />
     <carrier_config mcc="421" mnc="03" />
     <carrier_config mcc="421" mnc="04" />
+    <carrier_config mcc="421" mnc="11" />
     <carrier_config mcc="422" mnc="02">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
@@ -109419,6 +109924,8 @@
         <int name="recipientLimit" value="20" />
         <int name="smsToMmsTextThreshold" value="6" />
     </carrier_config>
+    <carrier_config mcc="454" mnc="07" imsi="454078" />
+    <carrier_config mcc="454" mnc="07" imsi="454079" />
     <carrier_config mcc="454" mnc="07" />
     <carrier_config mcc="454" mnc="09" />
     <carrier_config mcc="454" mnc="10">
@@ -111365,20 +111872,6 @@
         <int name="recipientLimit" value="20" />
         <int name="smsToMmsTextThreshold" value="6" />
     </carrier_config>
-    <carrier_config mcc="530" mnc="05" imsi="53005204">
-        <int name="carrier_default_wfc_ims_mode_int" value="1" />
-        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
-        <int name="maxImageHeight" value="1944" />
-        <int name="maxImageWidth" value="2592" />
-        <int name="maxMessageSize" value="614400" />
-        <int name="recipientLimit" value="20" />
-        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
-        <int name="smsToMmsTextThreshold" value="6" />
-        <boolean name="supportMmsContentDisposition" value="false" />
-    </carrier_config>
     <carrier_config mcc="530" mnc="05">
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
@@ -112599,6 +113092,7 @@
             <item value="1" />
             <item value="2" />
         </int-array>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -112634,6 +113128,7 @@
             <item value="1" />
             <item value="2" />
         </int-array>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
