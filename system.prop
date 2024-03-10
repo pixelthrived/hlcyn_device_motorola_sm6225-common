@@ -10,3 +10,6 @@ ro.lmk.minfree_levels=18432:64,23040:128,27648:192,32256:256,36864:320,46080:384
 ro.lmk.kill_heaviest_task=true
 ro.lmk.psi_partial_stall_ms=150
 ro.lmk.psi_complete_stall_ms=70
+
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
