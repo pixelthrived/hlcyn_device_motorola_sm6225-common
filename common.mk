@@ -228,6 +228,7 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
+    libstagefright_softomx_plugin.vendor \
     libc2dcolorconvert
 
 # Media - Configs
