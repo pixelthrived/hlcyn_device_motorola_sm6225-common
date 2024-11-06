@@ -3,15 +3,15 @@
 #
 
 AB_OTA_PARTITIONS += \
-    bluetooth \
-    modem \
     abl \
+    bluetooth \
     devcfg \
     dsp \
     fsg \
     hyp \
     keymaster \
     logo \
+    modem \
     prov \
     qupfw \
     rpm \
