@@ -1,3 +1,9 @@
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
+
 # RAM
 ro.config.fha_enable=true
 ro.sys.fw.bg_apps_limit=32
