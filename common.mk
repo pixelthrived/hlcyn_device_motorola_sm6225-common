@@ -122,6 +122,9 @@ PRODUCT_PACKAGES += \
 # ConfigStore
 PRODUCT_PACKAGES += \
     disable_configstore
+    
+# DebugFS
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Dex/ART optimization
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
