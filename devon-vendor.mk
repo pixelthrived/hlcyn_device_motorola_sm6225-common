@@ -3696,7 +3696,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devon/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc \
     vendor/motorola/devon/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc \
     vendor/motorola/devon/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.st-moto.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.st-moto.rc \
-    vendor/motorola/devon/proprietary/vendor/etc/init/hw/init.vendor.st21nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.vendor.st21nfc.rc \
     vendor/motorola/devon/proprietary/vendor/etc/init/init.ets.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ets.rc \
     vendor/motorola/devon/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
     vendor/motorola/devon/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
@@ -3915,7 +3914,6 @@ PRODUCT_PACKAGES += \
     libvidhance_horizon_correction \
     libvidhance_stabilizer \
     vendor.egistecbix.hardware.fingerprint@4.0 \
-    STFlashTool \
     android.hardware.biometrics.fingerprint@2.1-service-ets \
     android.hardware.biometrics.fingerprint@2.1-service-fpc \
     thermal-engine

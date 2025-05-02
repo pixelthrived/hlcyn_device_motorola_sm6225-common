@@ -1,10 +1,10 @@
-on property:init.svc.vendor.stflashtool=stopped && property:ro.vendor.hw.nfc=true
+on boot && property:ro.vendor.hw.nfc=true
     start vendor.st_nfc_hal_service
 
-on property:init.svc.vendor.stflashtool=stopped && property:ro.vendor.hw.nfc=st
+on boot && property:ro.vendor.hw.nfc=st
     start vendor.st_nfc_hal_service
 
-on property:init.svc.vendor.stflashtool=stopped && property:ro.vendor.hw.nfc=ese_st
+on boot && property:ro.vendor.hw.nfc=ese_st
     start vendor.st_nfc_hal_service
 
 service vendor.st_nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.st
