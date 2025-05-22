@@ -3673,7 +3673,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/devon/proprietary/recovery/root/vendor/firmware/ILITEK_FW:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ILITEK_FW \
-    vendor/motorola/devon/proprietary/recovery/root/vendor/firmware/focaltech_ts_fw_txd.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_txd.bin \
+    vendor/motorola/devon/proprietary/recovery/root/vendor/firmware/focaltech-txd-ft8726-02-0000-devon.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech-txd-ft8726-02-0000-devon.bin \
     vendor/motorola/devon/proprietary/recovery/root/vendor/firmware/tm_novatek_ts_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/tm_novatek_ts_fw.bin \
     vendor/motorola/devon/proprietary/recovery/root/vendor/firmware/tm_novatek_ts_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/tm_novatek_ts_mp.bin \
     vendor/motorola/devon/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
@@ -3766,7 +3766,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devon/proprietary/vendor/firmware/aw882xx_spk_reg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_spk_reg.bin \
     vendor/motorola/devon/proprietary/vendor/firmware/aw9610x_0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw9610x_0.bin \
     vendor/motorola/devon/proprietary/vendor/firmware/aw_skt.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_skt.bin \
-    vendor/motorola/devon/proprietary/vendor/firmware/focaltech_ts_fw_txd.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw_txd.bin \
+    vendor/motorola/devon/proprietary/vendor/firmware/focaltech-txd-ft8726-02-0000-devon.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-txd-ft8726-02-0000-devon.bin \
     vendor/motorola/devon/proprietary/vendor/firmware/st21nfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw.bin \
     vendor/motorola/devon/proprietary/vendor/firmware/st21nfc_fw7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw7.bin \
     vendor/motorola/devon/proprietary/vendor/firmware/tm_novatek_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tm_novatek_ts_fw.bin \
