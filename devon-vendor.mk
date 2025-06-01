@@ -3756,6 +3756,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devon/proprietary/vendor/etc/st21nfc_conf_ss.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st21nfc_conf_ss.txt \
     vendor/motorola/devon/proprietary/vendor/etc/thermal-engine-devon.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-devon.conf \
     vendor/motorola/devon/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/motorola/devon/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
     vendor/motorola/devon/proprietary/vendor/firmware/ILITEK_FW:$(TARGET_COPY_OUT_VENDOR)/firmware/ILITEK_FW \
     vendor/motorola/devon/proprietary/vendor/firmware/NT36xxx_MP_Setting_Criteria_6056.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/NT36xxx_MP_Setting_Criteria_6056.csv \
     vendor/motorola/devon/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
@@ -3918,6 +3919,7 @@ PRODUCT_PACKAGES += \
     libvidhance_horizon_correction \
     libvidhance_stabilizer \
     vendor.egistecbix.hardware.fingerprint@4.0 \
+    cnss-daemon \
     android.hardware.biometrics.fingerprint@2.1-service-ets \
     android.hardware.biometrics.fingerprint@2.1-service-fpc \
     thermal-engine
