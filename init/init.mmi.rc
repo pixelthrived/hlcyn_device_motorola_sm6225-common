@@ -7,6 +7,9 @@ import /vendor/etc/init/hw/init.mmi.overlay.rc
 # Dalvik configuration
 import /vendor/etc/init/hw/init.mmi.dalvik.rc
 
+# Charge only mode configuration
+import /vendor/etc/init/hw/init.mmi.charge_only.rc
+
 on early-boot
     write /sys/module/subsystem_restart/parameters/disable_restart_work 0x0
 
@@ -241,11 +244,6 @@ on boot
    # restore default console_loglevel to KERN_DEBUG
    # restore default_message_loglevel to KERN_WARNING
    write /proc/sys/kernel/printk "7 4 1 7"
-
-    # MOTO, NJH348, IKHALFMWK-1864, change system max tcp buffer sizes based on RAT changes
-    # Define system changable TCP buffer max values
-    chown system system /proc/sys/net/core/rmem_max
-    chown system system /proc/sys/net/core/wmem_max
 
  # Change ownership and permission for leds backlight
    chmod 0664 /sys/class/leds/lcd-backlight/brightness
