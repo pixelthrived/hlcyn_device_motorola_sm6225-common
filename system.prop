@@ -5,12 +5,8 @@ dalvik.vm.dex2oat64.enabled=true
 ro.vendor.perf.scroll_opt=true
 
 # RAM
-ro.config.fha_enable=true
-ro.sys.fw.bg_apps_limit=32
-ro.config.dha_cached_max=16
-ro.config.dha_empty_max=42
-ro.config.dha_empty_init=32
-ro.config.dha_lmk_scale=0.545
-ro.config.dha_th_rate=2.3
-ro.config.sdha_apps_bg_max=64
-ro.config.sdha_apps_bg_min=8
+ro.lmk.use_minfree_levels=true
+ro.lmk.minfree_levels=18432:64,23040:128,27648:192,32256:256,36864:320,46080:384
+ro.lmk.kill_heaviest_task=true
+ro.lmk.psi_partial_stall_ms=150
+ro.lmk.psi_complete_stall_ms=70
