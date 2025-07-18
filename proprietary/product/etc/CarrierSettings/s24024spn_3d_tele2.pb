@@ -1,5 +1,5 @@
 
-s24024spn_3d_tele2ôôÓ"ø"
+s24024spn_3d_tele2¼öÓ"ø"
 carrier_wfc_ims_available_bool(
 maxImageHeight˜
 maxImageWidth 

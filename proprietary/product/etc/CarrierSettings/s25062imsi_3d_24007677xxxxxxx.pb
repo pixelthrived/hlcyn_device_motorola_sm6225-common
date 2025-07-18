@@ -1,5 +1,5 @@
 
-s25062imsi_3d_24007677xxxxxxxÙÙ”ù
+s25062imsi_3d_24007677xxxxxxxºˆ”ù
 Tinkoff	m.tinkoff"Ïë
 'carrier_additional_cbs_channels_strings2Â
 50:emergency=true
