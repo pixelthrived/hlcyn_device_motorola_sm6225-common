@@ -242,6 +242,7 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,livedisplay_sdm,enable_dm,false)
 $(call soong_config_set,livedisplay_sysfs,enable_se,true)
+$(call soong_config_set,livedisplay_sysfs,enable_ab,true)
 
 # Media
 PRODUCT_PACKAGES += \
