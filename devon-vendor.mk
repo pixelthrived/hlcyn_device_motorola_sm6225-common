@@ -3691,6 +3691,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devon/proprietary/vendor/etc/camera/SwadCalib.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SwadCalib.bin \
     vendor/motorola/devon/proprietary/vendor/etc/camera/SwadParamList.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SwadParamList.txt \
     vendor/motorola/devon/proprietary/vendor/etc/camera/aec_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/aec_golden_wide.bin \
+    vendor/motorola/devon/proprietary/vendor/etc/camera/anc_detect_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_detect_model \
+    vendor/motorola/devon/proprietary/vendor/etc/camera/anc_track_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_track_model \
     vendor/motorola/devon/proprietary/vendor/etc/camera/dual_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dual_golden_wide.bin \
     vendor/motorola/devon/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/motorola/devon/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc \
@@ -3869,8 +3871,10 @@ PRODUCT_PACKAGES += \
     bix.fingerprint.default \
     camera.qcom \
     com.qti.chi.override \
+    libAncFaceDetect \
     libBSTSWAD \
     libBSTbase_share \
+    libancbase_fd \
     libarcsoft_chi_utils \
     libarcsoft_low_light_shot \
     libbitmlengine \
