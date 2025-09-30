@@ -29,3 +29,6 @@ ro.vendor.qti.va_aosp.support=1
 
 # Radio
 ril.subscription.types=RUIM
+
+# Display
+sys.brightness.disable_gamma_conversion=true

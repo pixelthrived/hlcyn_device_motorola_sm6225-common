@@ -30,6 +30,11 @@ persist.vendor.audio_fx.waves.proc_twks=true
 persist.vendor.audio_fx.waves.processing=true
 persist.vendor.audio_fx.waves.processing_nx=true
 persist.vendor.audio_fx.waves.systrace=true
+persist.vendor.audio.dualmic.config=endfire
+persist.vendor.audio.fluence.voicecall=false
+persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.voicecall.speaker.stereo=false
+ro.audio.monitorRotation=true
 ro.af.client_heap_size_kbyte=7168
 ro.config.vc_call_vol_steps=8
 ro.vendor.audio.sdk.fluencetype=none
@@ -101,6 +106,7 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 
 # Camera
 camera.disable_zsl_mode=1
+persist.vendor.camera.physical.num=4
 
 # Chipset
 ro.soc.manufacturer=QTI
@@ -147,6 +153,10 @@ ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+ro.surface_flinger.has_wide_color_display=false
+ro.surface_flinger.set_idle_timer_ms=500
+ro.surface_flinger.set_touch_timer_ms=2000
+ro.surface_flinger.use_smart_90_for_video=true
 service.sf.prime_shader_cache=0
 vendor.display.camera_noc_efficiency_factor=0.70
 vendor.display.comp_mask=0
@@ -169,6 +179,12 @@ vendor.display.use_smooth_motion=1
 vendor.gralloc.disable_ubwc=0
 vendor.gralloc.secure_preview_buffer_format=420_sp
 vendor.opengles.version=196610
+
+# Fingerprint
+vendor.false_touch_quality=38
+
+# NFC
+persist.vendor.nfc.st.multisim_fw_config=true
 
 # DPM
 persist.vendor.dpmhalservice.enable=1
@@ -252,6 +268,7 @@ persist.vendor.radio.sib16_support=1
 persist.vendor.radio.start_ota_daemon=1
 persist.vendor.radio.sw_mbn_update=0
 ro.telephony.default_network=10,10
+ro.vendor.radio.imei.sv=17
 telephony.lteOnCdmaDevice=1
 
 # Reduce boot time
