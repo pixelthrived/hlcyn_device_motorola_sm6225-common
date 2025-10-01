@@ -451,4 +451,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/motorola/sm6225-common/sm6225-common-vendor.mk)
+$(call inherit-product, device/motorola/devon/devon-vendor.mk)

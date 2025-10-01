@@ -227,5 +227,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 CONFIG_ACS := true
 
 # Inherit from the proprietary version
-include vendor/motorola/sm6225-common/BoardConfigVendor.mk
+include device/motorola/devon/BoardConfigVendor.mk
 include hardware/motorola/dolby/BoardConfigVendor.mk
