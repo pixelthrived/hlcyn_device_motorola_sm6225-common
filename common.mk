@@ -6,6 +6,8 @@
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+# Include signing keys if they exist
+-include vendor/lineage-priv/keys/keys.mk
 
 # Enable whole-program R8 Java optimizations for system_server.
 FULL_SYSTEM_OPTIMIZE_JAVA := true
